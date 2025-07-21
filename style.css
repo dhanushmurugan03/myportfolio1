@@ -1,0 +1,227 @@
+\Downloads\sampleportfolio\style.css */
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #cc0000;
+  color: #fff;
+}
+
+/* Profile photo at top center */
+.profile-photo-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.profile-photo-top img {
+  width: 180px;
+  height: 180px;
+border-radius: 100%;
+width: 240px;
+height: 240px;
+  border: 3px solid #fff;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+/* Large profile photo below header */
+.profile-photo-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0 24px 0;
+}
+.profile-photo-large img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+/* Header and Navigation */
+header {
+  background-color: #990000;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffcccc;
+}
+
+/* Section Styles */
+.section {
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+
+/* Tiles Layout */
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin: 40px auto 0 auto;
+  max-width: 1200px;
+}
+.tile {
+  background: #fff;
+  color: #b30000;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  padding: 28px 24px 20px 24px;
+  width: 340px;
+  min-width: 240px;
+  max-width: 100%;
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  border-top: 6px solid #b30000;
+}
+.tile h2 {
+  color: #b30000;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.tile h3 {
+  color: #990000;
+  margin-bottom: 6px;
+  margin-top: 18px;
+  font-size: 1.08rem;
+  font-weight: bold;
+}
+.tile a {
+  color: #b30000;
+  text-decoration: underline;
+  word-break: break-all;
+}
+.tile a:hover {
+  color: #990000;
+}
+
+/* Landscape Tiles */
+.landscape-tile {
+  width: 90vw;
+  min-width: 320px;
+  max-width: 1100px;
+  min-height: 180px;
+  margin: 18px auto;
+  font-size: 1.35rem;
+  padding: 36px 48px 36px 48px;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: block;
+}
+
+.landscape-tile:active,
+.landscape-tile:focus,
+.landscape-tile.selected {
+  box-shadow: 0 0 0 6px #b30000, 0 4px 24px rgba(0,0,0,0.13);
+  transform: scale(1.01);
+  z-index: 2;
+}
+
+.tiles-container.single-tile-mode .landscape-tile {
+  display: none;
+}
+
+.tiles-container.single-tile-mode .landscape-tile.selected {
+  display: block;
+  width: 98vw;
+  min-height: 60vh;
+  font-size: 2rem;
+  padding: 60px 8vw;
+  margin: 32px auto;
+  box-shadow: 0 0 0 8px #b30000, 0 8px 32px rgba(0,0,0,0.18);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #cc0000;
+  font-weight: bold;
+}
+button {
+  padding: 10px 20px;
+  background-color: #b30000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  background-color: #ffcccc;
+  color: #990000;
+}
+
+/* Footer */
+footer {
+  background-color: #990000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .tiles-container {
+    gap: 18px;
+  }
+  .tile {
+    width: 90%;
+    min-width: 200px;
+    padding: 18px 10px 14px 10px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .tiles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}

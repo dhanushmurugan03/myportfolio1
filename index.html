@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanush | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#additional">Additional Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>  
+    </nav>
+  </header>
+
+  <div class="profile-photo-large">
+    <img src="IMG20250214103751 (1)-Picsart-AiImageEnhancer.jpg.png" alt="Profile Photo" />
+  </div>
+
+  <main>
+    <section id="home" class="section">
+      <h1><span class="typed-text"></span></h1>
+    </section>
+
+    <div class="tiles-container">
+      <div class="tile landscape-tile" id="about" data-tile="about" onclick="showTile('about')">
+        <h2>About</h2>
+        <p>
+          <strong>DHANUSH M</strong><br>
+          Salem, Tamil Nadu, India<br>
+          9363138971 | <a href="mailto:dhanush.murugan.eee@gmail.com">dhanush.m1507@gmail.com</a><br>
+          <a href="https://linkedin.com/in/dhanush-murugan" target="_blank">linkedin.com/in/dhanush-murugan</a>
+        </p>
+        <h3>Career Objective</h3>
+        <p>
+          Motivated and detail-oriented Electrical and Electronics Engineering undergraduate with strong analytical and problem-solving skills. Proficient in Python, SQL, Excel, and Power BI. Eager to apply data analytics knowledge in real-world scenarios through an internship in data analysis, while gaining hands-on industry experience.
+        </p>
+      </div>
+
+      <div class="tile landscape-tile" id="education" data-tile="education" onclick="showTile('education')">
+        <h2>Education</h2>
+        <p>
+          Bachelor of Engineering – Electrical and Electronics Engineering<br>
+          Dhirajlal Gandhi College of Technology, Salem<br>
+          Expected Graduation: 2026<br>
+          Current CGPA: 7.5 / 10
+        </p>
+      </div>
+
+      <div class="tile landscape-tile" id="skills" data-tile="skills" onclick="showTile('skills')">
+        <h2>Skills</h2>
+        <p>
+          Programming Languages: Python, Java<br>
+          Data Analysis Tools: MS Excel, Power BI, Excel Dashboards<br>
+          Database: SQL<br>
+          Tools & Software: MATLAB, MS Word<br>
+          Soft Skills: Problem-Solving, Communication, Quick Learner, Team Collaboration
+        </p>
+      </div>
+
+      <div class="tile landscape-tile" id="projects" data-tile="projects" onclick="showTile('projects')">
+        <h2>Projects</h2>
+        <h3>Road Accident Data Visualization</h3>
+        <p>
+          Analyzed real-world accident data using Excel to identify trends and hotspots.<br>
+          Created pivot tables, slicers, and dashboards for clear data representation.<br>
+          Key Skills Used: Data Cleaning, Excel Charts, Dashboard Design, Analytical Thinking
+        </p>
+        <h3>Two-Wire Communication Using CAN Bus and Arduino</h3>
+        <p>
+          Developed a communication system using Arduino, CAN Bus modules, and sensors.<br>
+          Focused on reducing hardware complexity while maintaining reliable data transfer.<br>
+          Key Skills Used: Embedded Systems, Sensor Integration, Problem Solving
+        </p>
+      </div>
+
+      <div class="tile landscape-tile" id="internship" data-tile="internship" onclick="showTile('internship')">
+        <h2>Internship Experience</h2>
+        <p>
+          Intern – United Softech, Salem<br>
+          March 2024 – April 2024<br>
+          Worked on an Electric Vehicle (EV) system project, including BMS simulation and motor controller wiring.<br>
+          Contributed to MATLAB simulations and embedded system testing.<br>
+          Gained exposure to: EV architecture, MATLAB tools, real-world system analysis
+        </p>
+      </div>
+
+      <div class="tile landscape-tile" id="certifications" data-tile="certifications" onclick="showTile('certifications')">
+        <h2>Certifications</h2>
+        <p>
+          Python Programming – Simplilearn<br>
+          Java Programming – Simplilearn<br>
+          MS Excel for Beginners to Advanced – Simplilearn<br>
+          Workshop: AI Native Networking – NIT Trichy<br>
+          Seminar: Data & Tech Trends – Government Engineering College, Salem
+        </p>
+      </div>
+
+      <div class="tile landscape-tile" id="additional" data-tile="additional" onclick="showTile('additional')">
+        <h2>Additional Information</h2>
+        <p>
+          Languages Known: English, Tamil<br>
+          Memberships: Bureau of Indian Standards – Student Member
+        </p>
+      </div>
+    </div>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dhanush. All rights reserved.</p>
+  </footer>
+</body>
+</html>
